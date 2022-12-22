@@ -13,6 +13,8 @@
 .site-title {
   font-size: 2rem;
   padding: 0.1rem;
+  color: #6fa5da;
+  
 }
 
 .nav ul {
@@ -27,6 +29,7 @@
   margin-top: 0.7rem;
   text-decoration: none;
   padding: 0 1rem;
+  color: grey;
 }
 
 .nav li:hover {
@@ -40,4 +43,5 @@
     border-radius: 10px;
     padding: 0.25rem;
     background-color: $error-color;
+    
 }
