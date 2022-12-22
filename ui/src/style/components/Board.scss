@@ -1,0 +1,36 @@
+.bord-wrapper {
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+.container .card .card-box {
+  position: relative;
+  border-radius: 6px;
+  padding-top: 1rem;
+}
+
+.card {
+  width: 33%;
+  height: 300px;
+  display: flex;
+}
+
+.card .card-box {
+  margin: 15px;
+}
+
+.card .card-box img {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  object-fit: contain;
+}
+
+.card-box h6 {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 13px;
+  font-weight: 400;
+}

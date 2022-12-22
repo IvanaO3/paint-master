@@ -1,0 +1,58 @@
+.container {
+  margin: 0 auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  width: 100%;
+
+  @include mq(sm) {
+    max-width: $col-sm;
+  }
+
+  @include mq(md) {
+    max-width: $col-md;
+  }
+
+  @include mq(lg) {
+    max-width: $col-lg;
+  }
+
+  @include mq(xl) {
+    max-width: $col-xl;
+  }
+}
+
+.center-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.left-top-layout {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.off-set {
+  padding-top: 4em;
+}
+
+.neum {
+  border: 1px solid #333;
+  background: #e0e0e0;
+  box-shadow: -50px 50px 100px #969696, 50px -50px 100px #ffffff;
+}
+
+.paint-view-save {
+  position: absolute;
+  left: 1em;
+  top: 5em;
+  padding: 1em;
+  border: 0;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #00d1b2;
+}

@@ -1,0 +1,36 @@
+.app-btn{
+  position: relative;
+  padding: 0.3em;
+  border: none;
+  span{
+    display: none;
+    position: absolute;
+    z-index: 99;
+    background: #8CFFDA;
+    padding: 0.3em;
+    font-size: 12px;
+    left: 0;
+    bottom: -2em; 
+  }
+  svg{
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.app-btn:hover{
+  background: #8CFFDA;
+  span{
+    display: block;
+  }
+}
+
+.app-btn:focus{
+  background: #C7E8F3;
+}
+
+.app-btn.app-btn:focus:hover{
+  span{
+    background: #C7E8F3 ;
+  }
+}

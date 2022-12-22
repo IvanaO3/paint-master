@@ -1,0 +1,33 @@
+.palete{
+  position: absolute;
+  z-index: 999;
+  bottom: 1.5em;
+  padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  border-radius: 0.3em;
+  .palete-color{
+    padding: 1em;      
+    border: 1px solid black;  
+  }
+  .palete-custom-color{
+    padding: 0 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    input[type = "text"] {
+      margin-left: 0.5em;
+      width: 100%;
+      padding: 0.5em;
+      border: none;
+    }
+
+    input[type = "text"] :hover, :focus {
+      outline: 2px solid #8CFFDA;
+    }
+  }
+}
