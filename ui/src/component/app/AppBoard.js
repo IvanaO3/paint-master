@@ -150,7 +150,6 @@ export const AppBoard = () => {
         tool
       );
       setElement((prevState) => [...prevState, element]);
-      console.log(elements);
     }
   };
   const handleMouseMove = (e) => {
@@ -179,10 +178,17 @@ export const AppBoard = () => {
   };
 
   const saveImage = async () => {
+    const userToken = JSON.parse(localStorage.getItem("user-token"));
+    let author = ""
+      console.log(userToken)
+    if (userToken)
+     {
+      author =userToken.firstname;
+      }
     await axios
       .post("http://localhost:1337/arts", {
         image: image.toDataURL(),
-        author: "Ivana",
+        author: author,
       })
       .then(() => toast.success("Image saved"));
   };

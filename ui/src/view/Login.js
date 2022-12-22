@@ -15,7 +15,7 @@ export const Login = () => {
       })
       .then((res) => {
         localStorage.clear();
-        localStorage.setItem("user-token", JSON.stringify(res.data.data));
+        localStorage.setItem("user-token", JSON.stringify(res.data.data[0]));
         setTimeout(() => {
           navigate("/");
         });

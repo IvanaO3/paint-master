@@ -3,12 +3,11 @@ import { Link, useNavigate } from "react-router-dom";
 
 export const Navbar = () => {
   const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = React.useState(false);
   const logOut = () => {
     localStorage.clear();
-    setIsLoggedIn(false);
     navigate("/login");
   };
+  
   return (
     <nav className="nav">
       <h2 className="site-title">Paint Master</h2>

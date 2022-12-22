@@ -26,6 +26,5 @@ export const {
   handleActionSelection,
   handleToolSelection,
   handleColorSelection,
-  handleImageSave,
 } = AppSlice.actions;
 export default AppSlice.reducer;
