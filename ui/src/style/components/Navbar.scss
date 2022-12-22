@@ -32,3 +32,12 @@
 .nav li:hover {
   text-decoration: underline white;
 }
+
+
+.log-btn{
+
+    border: 1px solid $error-color;
+    border-radius: 10px;
+    padding: 0.25rem;
+    background-color: $error-color;
+}

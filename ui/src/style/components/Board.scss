@@ -24,13 +24,17 @@
   width: 100%;
   border-radius: 6px;
   object-fit: contain;
+  border: 3px solid lightgray;
+  padding: 1rem;
+  box-shadow: 10px 10px 5px lightblue;
 }
 
 .card-box h6 {
   position: absolute;
-  bottom: 10px;
+  bottom: 5px;
   left: 10px;
-  color: white;
+  color: blue;
   font-size: 13px;
   font-weight: 400;
+  overflow: auto;
 }

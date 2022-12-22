@@ -18,7 +18,7 @@ export const Navbar = () => {
         <li>
           <Link to={"/board"}>Board</Link>
         </li>
-        <button onClick={logOut}>Log Out</button>
+        <button className="log-btn" onClick={logOut}>Log Out</button>
       </ul>
     </nav>
   );
