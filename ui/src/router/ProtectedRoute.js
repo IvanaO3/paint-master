@@ -13,7 +13,6 @@ export const ProtectedRoute = (props) => {
     setIsLoggedIn(true);
   };
   useEffect(() => {
-    console.log("aca");
     checkUserToken();
   }, [isLoggedIn]);
   return <React.Fragment>{isLoggedIn ? props.children : null}</React.Fragment>;
